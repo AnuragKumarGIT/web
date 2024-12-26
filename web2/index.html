@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntelliFilter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <header class="header">
+            <h1>Email Spam Classifier</h1>
+            <p> AI & Machine Learning-Powered</p>
+        </header>
+        <main class="main-content">
+            <form id="textForm" class="text-form">
+                <label for="inputText" class="form-label">Type your text below:</label>
+                <textarea id="inputText" class="text-area" placeholder="Enter your text here..." rows="6"></textarea>
+                <div class="form-actions">
+                    <button type="button" id="clearButton" class="btn">Clear</button>
+                    <button type="button" id="submitButton" class="btn primary">Submit</button>
+                </div>
+            </form>
+            <section id="resultSection" class="result-section" hidden>
+                <h2>Result</h2>
+                <p id="displayText"></p>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>&copy; <span style="color: black;">2024 IntelliFilter</span></p> <!-- Added inline style to make text black -->
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
